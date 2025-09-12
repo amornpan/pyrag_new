@@ -16,7 +16,9 @@
    chmod +x install_conda.sh
    ./install_conda.sh
 
-   conda activate mcp-rag-qdrant-1.0
+   conda env create -f environment.yml
+
+   conda activate mcp-rag-qdrant-1.1
    pip install ollama
 
    ollama pull nomic-embed-text
@@ -39,7 +41,7 @@
    ```json
    {
      "mcpServers": {
-        "mcp-rag-qdrant-1.0": {
+        "mcp-rag-qdrant-1.1": {
         "command": "/path/to/conda/bin/python",
         "args": [
           "/path/to/run.py",
