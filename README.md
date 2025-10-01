@@ -17,10 +17,10 @@
    chmod +x install_conda.sh
    ./install_conda.sh
 
-   # mac/linuxwindows**
+   # mac/linux/windows
    conda env create -f environment.yml
 
-   # mac/linuxwindows**
+   # mac/linux/windows
    conda activate mcp-rag-qdrant-1.1
    pip install ollama
 
