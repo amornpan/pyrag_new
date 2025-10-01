@@ -13,14 +13,14 @@
 1. **ให้สิทธิ์และรันสคริปต์ติดตั้ง**
 
    ```bash
-  mac/linux
+   mac/linux
    chmod +x install_conda.sh
    ./install_conda.sh
 
-  mac/linux/windows
+   mac/linux/windows
    conda env create -f environment.yml
 
-  mac/linux/windows
+   mac/linux/windows
    conda activate mcp-rag-qdrant-1.1
    pip install ollama
 
