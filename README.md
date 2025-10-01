@@ -13,11 +13,14 @@
 1. **ให้สิทธิ์และรันสคริปต์ติดตั้ง**
 
    ```bash
+  # mac/linux
    chmod +x install_conda.sh
    ./install_conda.sh
 
+   # mac/linux/windows
    conda env create -f environment.yml
 
+  # mac/linux/windows
    conda activate mcp-rag-qdrant-1.1
    pip install ollama
 
@@ -25,9 +28,14 @@
    ```
 
 2. **ตรวจสอบ path ของ python ติดตั้ง**
+  [/path/to/conda/bin/python]
 
    ```bash
+   # mac/linux
    which python
+
+   #windows
+   where python
    ```
 
 3. **ตั้งค่า Claude Desktop**
@@ -36,7 +44,7 @@
    - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
    - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 
-   เพิ่มการตั้งค่าต่อไปนี้ (แทนที่ `/path/to/conda/bin/python` ด้วย path ของ python ติดตั้งไว้แล้ว):
+   เพิ่มการตั้งค่าต่อไปนี้ (แทนที่ `[/path/to/conda/bin/python]` ด้วย path ของ python ติดตั้งไว้แล้ว):
 
    ```json
    {
